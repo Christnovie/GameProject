@@ -13,18 +13,18 @@ namespace TestGame01
         private Vector2 pos;
         private int[] resolution;
 
-        public Move(string typeMove,int[] resolution,Vector2 position,int speedX = 6,int speedY = 6)
+        public Move(string typeMove,int[] resolution,Vector2 position)
         {
             this.resolution = resolution;
             pos = position;
         }
-        public void CloseMove(int x,int y)
+        public void CloseMove(int x,int y,int elementSize)
         {
             //When press right
             if (Keyboard.GetState().IsKeyDown(Keys.Right))
             {
                 pos.X += x;
-                if (pos.X > resolution[0]) pos.X = resolution[0]-(0.5f %resolution[0]);
+                if (pos.X > resolution[0]-elementSize) pos.X = resolution[0]-elementSize;
             }
             //When press left
             if (Keyboard.GetState().IsKeyDown(Keys.Left))
@@ -36,13 +36,13 @@ namespace TestGame01
             if (Keyboard.GetState().IsKeyDown(Keys.Up))
             {
                 pos.Y -= y;
-                if (pos.Y < 0) pos.Y = pos.Y = resolution[1] - (0.5f % resolution[1]);
+                if (pos.Y < 0) pos.Y = 0;
             }
             //When press down
             if (Keyboard.GetState().IsKeyDown(Keys.Down))
             {
                 pos.Y += y;
-                if (pos.Y > resolution[1]) pos.Y = 0;
+                if (pos.Y > resolution[1]-elementSize) pos.Y = resolution[1]-elementSize;
             }
         }
         public void InfinityMove(int x,int y)

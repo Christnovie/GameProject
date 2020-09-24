@@ -18,7 +18,7 @@ namespace TestGame01
         private Move move;
         private int x = 6;
         private int y = 6;
-        private string moveMode = "close";
+        private string moveMode = "Close";
         public PacmanTest()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -40,6 +40,7 @@ namespace TestGame01
 
         protected override void LoadContent()
         {
+
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             hero = Content.Load<Texture2D>("PacmanAvatar");//load image texture for avatar an create sprite
             move = new Move(moveMode, resolution, position);
@@ -48,27 +49,29 @@ namespace TestGame01
             hero = Texture2D.FromStream(GraphicsDevice, fileStream);
             fileStream.Dispose();
            **/
+          
             // TODO: use this.Content to load your game content here
         }
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed )
                 Exit();
             //Code for move a sprite avatar
             //When press right
             if (Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.Down) || Keyboard.GetState().IsKeyDown(Keys.Up))
             {
-                if (moveMode == "close") move.CloseMove(x, y);
-                if (moveMode == "infinity") move.CloseMove(x, y);
+                if (moveMode == "Close") move.CloseMove(x, y,hero.Width);
+                if (moveMode == "Infinity") move.InfinityMove(x, y);
+                position = move.Position;
             }
-            if (Keyboard.GetState().IsKeyDown(Keys.M))
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
-                wnd_MenuGame form = new wnd_MenuGame();
+                wnd_MenuGame form = new wnd_MenuGame(moveMode);
                 
                 if (form.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-
+                    moveMode = form.MoveMode;
                 }
             }
 
