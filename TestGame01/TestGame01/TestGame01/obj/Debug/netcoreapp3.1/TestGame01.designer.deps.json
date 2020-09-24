@@ -6,15 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "TestGame01/1.0.0": {
-        "dependencies": {
-          "MonoGame.Content.Builder.Task": "3.8.0.1641",
-          "MonoGame.Framework.WindowsDX": "3.8.0.1641"
-        },
-        "runtime": {
-          "TestGame01.dll": {}
-        }
-      },
       "Libuv/1.9.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.2"
@@ -152,6 +143,12 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.InteropServices": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.CSharp.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "Microsoft.NETCore.App/1.0.5": {
@@ -266,6 +263,20 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.Handles": "4.0.1",
           "System.Runtime.InteropServices": "4.1.0"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/Microsoft.Win32.Registry.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "MonoGame.Content.Builder.Task/3.8.0.1641": {},
@@ -479,6 +490,12 @@
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/System.AppContext.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Buffers/4.0.0": {
@@ -488,6 +505,12 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.1/System.Buffers.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Collections/4.0.11": {
@@ -509,6 +532,12 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Collections.Concurrent.dll": {
+            "assemblyVersion": "4.0.12.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Collections.Immutable/1.2.0": {
@@ -521,11 +550,23 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Collections.Immutable.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.ComponentModel/4.0.1": {
         "dependencies": {
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.ComponentModel.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.ComponentModel.Annotations/4.1.0": {
@@ -541,6 +582,12 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Text.RegularExpressions": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.4/System.ComponentModel.Annotations.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Console/4.0.0": {
@@ -566,6 +613,12 @@
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Diagnostics.FileVersionInfo/4.0.0": {
@@ -579,6 +632,20 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.InteropServices": "4.1.0"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Diagnostics.FileVersionInfo.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Diagnostics.FileVersionInfo.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Diagnostics.Process/4.1.0": {
@@ -604,6 +671,26 @@
           "System.Threading.Thread": "4.0.0",
           "System.Threading.ThreadPool": "4.0.10",
           "runtime.native.System": "4.0.0"
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/netstandard1.4/System.Diagnostics.Process.dll": {
+            "rid": "linux",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/osx/lib/netstandard1.4/System.Diagnostics.Process.dll": {
+            "rid": "osx",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.4/System.Diagnostics.Process.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Diagnostics.StackTrace/4.0.1": {
@@ -614,6 +701,12 @@
           "System.Reflection.Metadata": "1.3.0",
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Diagnostics.StackTrace.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Diagnostics.Tools/4.0.1": {
@@ -647,6 +740,12 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Dynamic.Runtime.dll": {
+            "assemblyVersion": "4.0.11.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Globalization/4.0.11": {
@@ -672,6 +771,20 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.InteropServices": "4.1.0"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Globalization.Extensions.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Globalization.Extensions.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.IO/4.1.0": {
@@ -699,6 +812,20 @@
           "System.Threading.Tasks": "4.0.11",
           "runtime.native.System": "4.0.0",
           "runtime.native.System.IO.Compression": "4.1.0"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.IO.Compression.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.IO.Compression.ZipFile/4.0.1": {
@@ -712,6 +839,12 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Text.Encoding": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.IO.Compression.ZipFile.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.IO.FileSystem/4.0.1": {
@@ -729,6 +862,12 @@
       "System.IO.FileSystem.Primitives/4.0.1": {
         "dependencies": {
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.IO.FileSystem.Watcher/4.0.0": {
@@ -749,6 +888,26 @@
           "System.Threading.Tasks": "4.0.11",
           "System.Threading.Thread": "4.0.0",
           "runtime.native.System": "4.0.0"
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/netstandard1.3/System.IO.FileSystem.Watcher.dll": {
+            "rid": "linux",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/osx/lib/netstandard1.3/System.IO.FileSystem.Watcher.dll": {
+            "rid": "osx",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.IO.FileSystem.Watcher.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.IO.MemoryMappedFiles/4.0.0": {
@@ -766,6 +925,20 @@
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11",
           "runtime.native.System": "4.0.0"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.IO.MemoryMappedFiles.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.IO.MemoryMappedFiles.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.IO.UnmanagedMemoryStream/4.0.1": {
@@ -777,6 +950,12 @@
           "System.Runtime.InteropServices": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.IO.UnmanagedMemoryStream.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Linq/4.1.0": {
@@ -786,6 +965,12 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/System.Linq.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Linq.Expressions/4.1.1": {
@@ -807,6 +992,12 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.6/System.Linq.Expressions.dll": {
+            "assemblyVersion": "4.1.0.1",
+            "fileVersion": "1.0.25009.2"
+          }
         }
       },
       "System.Linq.Parallel/4.0.1": {
@@ -821,6 +1012,12 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Linq.Parallel.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Linq.Queryable/4.0.1": {
@@ -833,6 +1030,12 @@
           "System.Reflection.Extensions": "4.0.1",
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Linq.Queryable.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Net.Http/4.1.2": {
@@ -863,6 +1066,20 @@
           "runtime.native.System": "4.0.0",
           "runtime.native.System.Net.Http": "4.0.1",
           "runtime.native.System.Security.Cryptography": "4.0.1"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Net.Http.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.0.2",
+            "fileVersion": "1.0.25220.3"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Net.Http.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.0.2",
+            "fileVersion": "1.0.25220.3"
+          }
         }
       },
       "System.Net.NameResolution/4.0.0": {
@@ -881,6 +1098,20 @@
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11",
           "runtime.native.System": "4.0.0"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Net.NameResolution.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Net.NameResolution.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Net.Primitives/4.0.11": {
@@ -906,6 +1137,20 @@
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Net.Requests.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.11.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Net.Requests.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.11.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Net.Security/4.0.1": {
@@ -938,6 +1183,20 @@
           "runtime.native.System": "4.0.0",
           "runtime.native.System.Net.Security": "4.0.1",
           "runtime.native.System.Security.Cryptography": "4.0.1"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Net.Security.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "1.0.25220.3"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Net.Security.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "1.0.25220.3"
+          }
         }
       },
       "System.Net.Sockets/4.1.0": {
@@ -956,6 +1215,12 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Net.WebHeaderCollection.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Numerics.Vectors/4.1.1": {
@@ -964,6 +1229,12 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.ObjectModel/4.0.12": {
@@ -973,6 +1244,12 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.ObjectModel.dll": {
+            "assemblyVersion": "4.0.12.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Reflection/4.1.0": {
@@ -996,6 +1273,12 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reflection.DispatchProxy.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Reflection.Emit/4.0.1": {
@@ -1005,6 +1288,12 @@
           "System.Reflection.Emit.ILGeneration": "4.0.1",
           "System.Reflection.Primitives": "4.0.1",
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reflection.Emit.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Reflection.Emit.ILGeneration/4.0.1": {
@@ -1012,6 +1301,12 @@
           "System.Reflection": "4.1.0",
           "System.Reflection.Primitives": "4.0.1",
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Reflection.Emit.Lightweight/4.0.1": {
@@ -1020,6 +1315,12 @@
           "System.Reflection.Emit.ILGeneration": "4.0.1",
           "System.Reflection.Primitives": "4.0.1",
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Reflection.Extensions/4.0.1": {
@@ -1047,6 +1348,12 @@
           "System.Text.Encoding": "4.0.11",
           "System.Text.Encoding.Extensions": "4.0.11",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.1/System.Reflection.Metadata.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Reflection.Primitives/4.0.1": {
@@ -1060,6 +1367,12 @@
         "dependencies": {
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Reflection.TypeExtensions.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Resources.Reader/4.0.0": {
@@ -1069,6 +1382,12 @@
           "System.Runtime": "4.1.0",
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Resources.Reader.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Resources.ResourceManager/4.0.1": {
@@ -1119,6 +1438,20 @@
           "System.Runtime.InteropServices": "4.1.0",
           "System.Threading": "4.0.11",
           "runtime.native.System": "4.0.0"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Runtime.Loader/4.0.0": {
@@ -1126,6 +1459,12 @@
           "System.IO": "4.1.0",
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Runtime.Loader.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Runtime.Numerics/4.0.1": {
@@ -1134,6 +1473,12 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Numerics.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Security.Claims/4.0.1": {
@@ -1145,6 +1490,12 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Security.Principal": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Security.Claims.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Security.Cryptography.Algorithms/4.2.0": {
@@ -1162,6 +1513,20 @@
           "System.Security.Cryptography.Primitives": "4.0.0",
           "System.Text.Encoding": "4.0.11",
           "runtime.native.System.Security.Cryptography": "4.0.1"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Security.Cryptography.Cng/4.2.0": {
@@ -1177,6 +1542,20 @@
           "System.Security.Cryptography.Encoding": "4.0.0",
           "System.Security.Cryptography.Primitives": "4.0.0",
           "System.Text.Encoding": "4.0.11"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Security.Cryptography.Csp/4.0.0": {
@@ -1194,6 +1573,20 @@
           "System.Security.Cryptography.Primitives": "4.0.0",
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Security.Cryptography.Encoding/4.0.0": {
@@ -1210,6 +1603,20 @@
           "System.Security.Cryptography.Primitives": "4.0.0",
           "System.Text.Encoding": "4.0.11",
           "runtime.native.System.Security.Cryptography": "4.0.1"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Security.Cryptography.OpenSsl/4.0.0": {
@@ -1227,6 +1634,20 @@
           "System.Security.Cryptography.Primitives": "4.0.0",
           "System.Text.Encoding": "4.0.11",
           "runtime.native.System.Security.Cryptography": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Security.Cryptography.Primitives/4.0.0": {
@@ -1238,6 +1659,12 @@
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Security.Cryptography.X509Certificates/4.1.0": {
@@ -1267,11 +1694,31 @@
           "runtime.native.System": "4.0.0",
           "runtime.native.System.Net.Http": "4.0.1",
           "runtime.native.System.Security.Cryptography": "4.0.1"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Security.Principal/4.0.1": {
         "dependencies": {
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Security.Principal.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Security.Principal.Windows/4.0.0": {
@@ -1290,6 +1737,20 @@
           "System.Security.Principal": "4.0.1",
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.Principal.Windows.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Text.Encoding/4.0.11": {
@@ -1313,6 +1774,20 @@
           "System.Runtime.InteropServices": "4.1.0",
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Text.Encoding.Extensions/4.0.11": {
@@ -1331,12 +1806,24 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.6/System.Text.RegularExpressions.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Threading/4.0.11": {
         "dependencies": {
           "System.Runtime": "4.1.0",
           "System.Threading.Tasks": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.dll": {
+            "assemblyVersion": "4.0.11.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Threading.Overlapped/4.0.1": {
@@ -1345,6 +1832,20 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Runtime.Handles": "4.0.1"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Threading.Overlapped.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Threading.Overlapped.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Threading.Tasks/4.0.11": {
@@ -1367,6 +1868,12 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll": {
+            "assemblyVersion": "4.6.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Threading.Tasks.Extensions/4.0.0": {
@@ -1374,6 +1881,12 @@
           "System.Collections": "4.0.11",
           "System.Runtime": "4.1.0",
           "System.Threading.Tasks": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Threading.Tasks.Parallel/4.0.1": {
@@ -1386,17 +1899,35 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.Tasks.Parallel.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Threading.Thread/4.0.0": {
         "dependencies": {
           "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.Thread.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Threading.ThreadPool/4.0.10": {
         "dependencies": {
           "System.Runtime": "4.1.0",
           "System.Runtime.Handles": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.ThreadPool.dll": {
+            "assemblyVersion": "4.0.10.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Threading.Timer/4.0.1": {
@@ -1423,6 +1954,12 @@
           "System.Text.RegularExpressions": "4.1.0",
           "System.Threading.Tasks": "4.0.11",
           "System.Threading.Tasks.Extensions": "4.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.ReaderWriter.dll": {
+            "assemblyVersion": "4.0.11.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Xml.XDocument/4.0.11": {
@@ -1439,6 +1976,12 @@
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11",
           "System.Xml.ReaderWriter": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XDocument.dll": {
+            "assemblyVersion": "4.0.11.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Xml.XmlDocument/4.0.1": {
@@ -1453,6 +1996,12 @@
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11",
           "System.Xml.ReaderWriter": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XmlDocument.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Xml.XPath/4.0.1": {
@@ -1466,6 +2015,12 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Xml.ReaderWriter": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XPath.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       },
       "System.Xml.XPath.XDocument/4.0.1": {
@@ -1479,16 +2034,17 @@
           "System.Xml.ReaderWriter": "4.0.11",
           "System.Xml.XDocument": "4.0.11",
           "System.Xml.XPath": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "1.0.24212.1"
+          }
         }
       }
     }
   },
   "libraries": {
-    "TestGame01/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Libuv/1.9.1": {
       "type": "package",
       "serviceable": true,
