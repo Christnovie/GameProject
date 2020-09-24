@@ -7374,19 +7374,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Skarfox\\.nuget\\packages\\": {}
+    "C:\\Users\\Christnovie.KIALA-BI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GamerRoom\\GameProject\\TestGame01\\TestGame01\\TestGame01\\TestGame01.csproj",
+      "projectUniqueName": "C:\\GameProject\\TestGame01\\TestGame01\\TestGame01\\TestGame01.csproj",
       "projectName": "TestGame01",
-      "projectPath": "D:\\GamerRoom\\GameProject\\TestGame01\\TestGame01\\TestGame01\\TestGame01.csproj",
-      "packagesPath": "C:\\Users\\Skarfox\\.nuget\\packages\\",
-      "outputPath": "D:\\GamerRoom\\GameProject\\TestGame01\\TestGame01\\TestGame01\\obj\\",
+      "projectPath": "C:\\GameProject\\TestGame01\\TestGame01\\TestGame01\\TestGame01.csproj",
+      "packagesPath": "C:\\Users\\Christnovie.KIALA-BI\\.nuget\\packages\\",
+      "outputPath": "C:\\GameProject\\TestGame01\\TestGame01\\TestGame01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Skarfox\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Christnovie.KIALA-BI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7437,7 +7437,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

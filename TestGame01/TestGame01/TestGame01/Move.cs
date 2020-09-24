@@ -12,13 +12,15 @@ namespace TestGame01
     {
         private Vector2 pos;
         private int[] resolution;
+        private int elementSize;
 
-        public Move(string typeMove,int[] resolution,Vector2 position)
+        public Move(int elementSize,int[] resolution,Vector2 position)
         {
+            this.elementSize = elementSize;
             this.resolution = resolution;
             pos = position;
         }
-        public void CloseMove(int x,int y,int elementSize)
+        public void CloseMove(int x,int y)
         {
             //When press right
             if (Keyboard.GetState().IsKeyDown(Keys.Right))
@@ -72,13 +74,36 @@ namespace TestGame01
                 if (pos.Y > resolution[1]) pos.Y = 0;
             }
         }
-        private void Move3()
+        public void GraviteJump(int x,int y,int gravity = 4)
         {
+            pos.Y += gravity;
+            //When press right
+            if (Keyboard.GetState().IsKeyDown(Keys.Right))
+            {
+                pos.X += x;
+                if (pos.X > resolution[0]) pos.X = 0;
+            }
+            //When press left
+            if (Keyboard.GetState().IsKeyDown(Keys.Left))
+            {
+                pos.X -= x;
+                if (pos.X < 0) pos.X = resolution[0];
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                pos.Y -= y;
+                if (pos.Y > resolution[1] - elementSize) pos.Y = resolution[1] - elementSize;
+            }
+
 
         }
         public Vector2 Position
         {
             get { return pos; }
+        }
+        public int[] Resolution
+        {
+            set { resolution = value; }
         }
     }
 }

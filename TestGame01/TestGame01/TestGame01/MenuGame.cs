@@ -6,6 +6,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System.Windows.Forms;
 using System.Configuration;
 
@@ -15,11 +17,17 @@ namespace TestGame01
     {
         private string verify;
         private string modeMove;
-        public wnd_MenuGame(string moveMode)
+        private string screenMode;
+        private GraphicsDeviceManager windows;
+        public wnd_MenuGame(string moveMode,string screenMode,GraphicsDeviceManager windows)
         {
+            this.windows = windows;
+            this.screenMode = screenMode;
             InitializeComponent();
             if (rdbMove1.Text == moveMode) rdbMove1.Checked = true;
             if (rdbMove2.Text == moveMode) rdbMove2.Checked = true;
+            if (cmdWindows.Text == screenMode) cmdFullscreen.Enabled = true;
+            if (cmdFullscreen.Text == screenMode) cmdWindows.Enabled = true;
             
         }
 
@@ -38,12 +46,17 @@ namespace TestGame01
         {
             if (rdbMove1.Checked) verify = "Infinity";
             if (rdbMove2.Checked) verify = "Close";
+            if (rdbJump.Checked) verify = "Jump";
             cmdApply.Enabled = false;
             lblMoveChoice.Visible = true;
             cmdApply.Visible = true;
             cmd_Cancels.Visible = true;
             rdbMove1.Visible = true;
             rdbMove2.Visible = true;
+            lblResolution.Visible = true;
+            cmdFullscreen.Visible = true;
+            cmdWindows.Visible = true;
+            rdbJump.Visible = true;
             cmd_Setting.Visible = false;
             cmd_Resume.Visible = false;
         }
@@ -68,6 +81,7 @@ namespace TestGame01
         {
             if (rdbMove1.Text == verify) rdbMove1.Checked = true;
             if (rdbMove2.Text == verify) rdbMove2.Checked = true;
+            if (rdbJump.Text == verify) rdbJump.Checked = true;
             lblMoveChoice.Visible = false;
             cmdApply.Visible = false;
             cmd_Cancels.Visible = false;
@@ -76,6 +90,9 @@ namespace TestGame01
             cmdApply.Enabled = false;
             cmd_Setting.Visible = true;
             cmd_Resume.Visible = true;
+            lblResolution.Visible = false;
+            cmdFullscreen.Visible = false;
+            cmdWindows.Visible = false;
         }
 
         private void cmdApply_Click(object sender, EventArgs e)
@@ -88,6 +105,37 @@ namespace TestGame01
             cmdApply.Enabled = false;
             cmd_Setting.Visible = true;
             cmd_Resume.Visible = true;
+            lblResolution.Visible = false;
+            cmdFullscreen.Visible = false;
+            cmdWindows.Visible = false;
+            
+            windows.ApplyChanges();
+        }
+
+        private void cmdFullscreen_Click(object sender, EventArgs e)
+        {
+            cmdApply.Enabled = true;
+            cmdFullscreen.Enabled = false;
+            cmdWindows.Enabled = true;
+             windows.PreferredBackBufferWidth = SystemInformation.VirtualScreen.Width;
+            windows.PreferredBackBufferHeight = SystemInformation.VirtualScreen.Height;
+            
+
+        }
+         
+        private void cmdWindows_Click(object sender, EventArgs e)
+        {
+
+        }
+        public int[] Resolution
+        {
+            
+            get 
+            {
+                int[] resolution = { windows.PreferredBackBufferWidth,windows.PreferredBackBufferHeight };
+               
+                return resolution; 
+            }
         }
     }
 }

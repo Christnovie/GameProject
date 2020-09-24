@@ -75,3 +75,6 @@ D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.
 D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\PacmanAvatar.xnb
 D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.csproj.GenerateResource.cache
 D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.wnd_MenuGame.resources
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\PacmanAvatar.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.wnd_MenuGame.resources
+C:\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.csproj.GenerateResource.cache
