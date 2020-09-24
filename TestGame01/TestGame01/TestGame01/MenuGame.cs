@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Windows.Forms;
 using System.Configuration;
+using Microsoft.Xna.Framework.Input;
 
 namespace TestGame01
 {
@@ -17,10 +18,11 @@ namespace TestGame01
     {
         private string verify;
         private string modeMove;
-        private string screenMode;
+        public string screenMode;
         private GraphicsDeviceManager windows;
         public wnd_MenuGame(string moveMode,string screenMode,GraphicsDeviceManager windows)
         {
+            this.modeMove = moveMode;
             this.windows = windows;
             this.screenMode = screenMode;
             InitializeComponent();
@@ -64,7 +66,10 @@ namespace TestGame01
         {
             get { return modeMove; }
         }
-
+        public string ScreenMode
+        {
+            get { return screenMode; }
+        }
         private void rdbMove1_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbMove1.Checked) modeMove = rdbMove1.Text;
@@ -87,6 +92,7 @@ namespace TestGame01
             cmd_Cancels.Visible = false;
             rdbMove1.Visible = false;
             rdbMove2.Visible = false;
+            rdbJump.Visible = false;
             cmdApply.Enabled = false;
             cmd_Setting.Visible = true;
             cmd_Resume.Visible = true;
@@ -101,6 +107,7 @@ namespace TestGame01
             cmdApply.Visible = false;
             cmd_Cancels.Visible = false;
             rdbMove1.Visible = false;
+            rdbJump.Visible = false;
             rdbMove2.Visible = false;
             cmdApply.Enabled = false;
             cmd_Setting.Visible = true;
@@ -108,7 +115,6 @@ namespace TestGame01
             lblResolution.Visible = false;
             cmdFullscreen.Visible = false;
             cmdWindows.Visible = false;
-            
             windows.ApplyChanges();
         }
 
@@ -116,26 +122,40 @@ namespace TestGame01
         {
             cmdApply.Enabled = true;
             cmdFullscreen.Enabled = false;
-            cmdWindows.Enabled = true;
-             windows.PreferredBackBufferWidth = SystemInformation.VirtualScreen.Width;
-            windows.PreferredBackBufferHeight = SystemInformation.VirtualScreen.Height;
+            cmdWindows.Enabled = true;            
+            screenMode = "Fullscreen";
             
 
         }
          
         private void cmdWindows_Click(object sender, EventArgs e)
         {
-
+            cmdApply.Enabled = true;
+            cmdFullscreen.Enabled = true;
+            cmdWindows.Enabled = false;                       
+            screenMode = "Windows";
         }
         public int[] Resolution
         {
-            
             get 
             {
                 int[] resolution = { windows.PreferredBackBufferWidth,windows.PreferredBackBufferHeight };
-               
                 return resolution; 
             }
+        }
+        private void wnd_MenuGame_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+            if (e.KeyCode == System.Windows.Forms.Keys.Escape)
+            {
+                Close();
+            }
+        }
+
+        private void rdbJump_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdbJump.Checked) modeMove = rdbJump.Text;
+            cmdApply.Enabled = true;
         }
     }
 }

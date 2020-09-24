@@ -1,3 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-Man.svg.png","C:/GameProject/TestGame01/TestGame01/TestGame01/Content/bin/Windows/Content/PacmanAvatar.xnb","TextureProcessor","Texture2DContent",4849,40085,0.1544163
-"C:/GameProject/TestGame01/TestGame01/TestGame01/Content/PacmanHero.png","C:/GameProject/TestGame01/TestGame01/TestGame01/Content/bin/Windows/Content/PacmanHero.xnb","TextureProcessor","Texture2DContent",37066,6067285,0.1579309
+"D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-Man.svg.png","D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/bin/Windows/Content/PacmanAvatar.xnb","TextureProcessor","Texture2DContent",4849,40085,0.2205604
+"D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/PacmanHero.png","D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/bin/Windows/Content/PacmanHero.xnb","TextureProcessor","Texture2DContent",37066,6067285,0.2109295
+"D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-ManLeft.svg.png","D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/bin/Windows/Content/PacmanLeft.xnb","TextureProcessor","Texture2DContent",5947,40085,0.1144132

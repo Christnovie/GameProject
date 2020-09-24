@@ -4,11 +4,13 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-ManLeft.svg.png</File>
     <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-Man.svg.png</File>
     <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/PacmanHero.png</File>
   </SourceFiles>
   <DestFiles>
-    <File>PacmanAvatar.png</File>
+    <File>PacmanLeft.png</File>
     <File xsi:nil="true" />
+    <File>PacmanAvatar.png</File>
   </DestFiles>
 </SourceFileCollection>

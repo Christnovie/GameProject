@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-Man.svg.png</SourceFile>
-  <SourceTime>2020-09-23T23:23:39.2650633+02:00</SourceTime>
-  <DestFile>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/bin/Windows/PacmanAvatar.xnb</DestFile>
-  <DestTime>2020-09-23T23:26:20.647704+02:00</DestTime>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-ManLeft.svg.png</SourceFile>
+  <SourceTime>2020-09-24T21:57:06.3120766+02:00</SourceTime>
+  <DestFile>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/bin/Windows/Content/Pac-ManLeft.svg.xnb</DestFile>
+  <DestTime>2020-09-24T21:58:55.3148092+02:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
+  <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2018-12-08T17:35:54+01:00</ProcessorTime>
+  <ProcessorTime>2020-08-10T16:17:54+02:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

@@ -92,7 +92,7 @@ namespace TestGame01
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
             {
                 pos.Y -= y;
-                if (pos.Y > resolution[1] - elementSize) pos.Y = resolution[1] - elementSize;
+               
             }
 
 
