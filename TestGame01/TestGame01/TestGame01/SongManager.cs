@@ -2,6 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
+using SharpDX.Direct3D11;
+using SharpDX.XAPO.Fx;
 
 namespace TestGame01
 {
@@ -18,6 +21,23 @@ namespace TestGame01
         }
         public void SaveSong(List<Song> songs)
         {
+           
+            try
+            {
+                string[] songName = new string[songs.Count];
+
+
+                int index = 0;
+                foreach (Song song in songs)
+                {
+                    songName[index] = song.Name;
+                }
+                File.WriteAllLines("C:/GameProject/TestGame01/TestGame01/TestGame01/Content/SongList.txt", songName);
+            }
+            catch(Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
 
         }
         public void SaveSongFile()

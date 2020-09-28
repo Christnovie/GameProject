@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using System;
+using System.Collections.Generic;
 using System.DirectoryServices.ActiveDirectory;
 using System.IO;
 using System.Threading;
@@ -28,8 +29,11 @@ namespace TestGame01
         public int gravity = 5;
         private string moveMode = "Close";
         private string screenMode = "Windows";
+        public List<Song> songs = new List<Song>();
+        private MusicGame listSong = new MusicGame();
         public Video backvideo;
         public Song  sound;
+        private bool stateSound;
         public PacmanTest()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -55,15 +59,17 @@ namespace TestGame01
 
         protected override void LoadContent()
         {
-            backvideo = Content.Load<Video>("videoplayback");
+          
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             hero = Content.Load<Texture2D>("PacmanAvatar");//load image texture for avatar an create sprite
-            next = Content.Load<Texture2D>("Next");
-            preview = Content.Load<Texture2D>("Preview");
-            play = Content.Load<Texture2D>("PausePlay");
-            sound = Content.Load<Song>("UndertaleUndyne");            
-            MediaPlayer.Play(sound);            
+            next = Content.Load<Texture2D>("Next");//load image texture for avatar an create sprite
+            preview = Content.Load<Texture2D>("Preview");//load image texture for avatar an create sprite
+            play = Content.Load<Texture2D>("PausePlay");//load image texture for avatar an create sprite
+            sound = Content.Load<Song>("UndertaleUndyne");     //load Music file 
+            MediaPlayer.Play(sound);         //play actualy song in multimedia  
             MediaPlayer.IsRepeating = true;
+
+            songs.Add(sound);
             move = new Move(hero.Width, resolution, position);
             position = new Vector2(0, 0);//Initialising a vector for prite
            /** FileStream fileStream = new FileStream("../../../Image/PacmanHero.svg.png",FileMode.Open);
@@ -121,7 +127,7 @@ namespace TestGame01
                 _graphics.ApplyChanges();
                
             }
-                if (Keyboard.GetState().IsKeyDown(Keys.Escape))
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape))
             {
                 _graphics.IsFullScreen = false;
                 wnd_MenuGame form = new wnd_MenuGame(moveMode,screenMode,_graphics);
@@ -148,10 +154,49 @@ namespace TestGame01
                     }
   
             }
+            if (Keyboard.GetState().IsKeyDown(Keys.Tab))
+            {
+                _graphics.IsFullScreen = false;
+                FormSong form = new FormSong();
 
-            // TODO: Add your update logic here
+                if (form.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {  
+                    
+                }
+                if (screenMode == "Fullscreen")
+                {
+                    _graphics.IsFullScreen = true;
+                    _graphics.ApplyChanges();
+                }
 
-            base.Update(gameTime);
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.P))
+            {
+                if (stateSound)
+                {
+                    MediaPlayer.Pause();
+                   
+                    stateSound = false;
+                }
+                else
+                {
+                    MediaPlayer.Resume();
+                    stateSound = true;
+                }
+                
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.L))
+            {
+                MediaPlayer.Resume();                
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Keyboard.GetState().IsKeyDown(Keys.S))
+            {
+                listSong.SaveSong(songs);
+            }
+            
+                // TODO: Add your update logic here
+
+                base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)

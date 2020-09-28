@@ -8,11 +8,18 @@ using System.Windows.Forms;
 
 namespace TestGame01
 {
-    public partial class Form1 : Form
+    public partial class FormSong : Form
     {
-        public Form1()
+        public FormSong()
         {
             InitializeComponent();
+            StartPosition = new Form().StartPosition;
+        }
+
+        private void cmdFinish_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+            Close();
         }
     }
 }

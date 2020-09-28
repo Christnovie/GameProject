@@ -87,3 +87,13 @@ D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.
 D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\Next.xnb
 D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\PausePlay.xnb
 D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\Preview.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\Next.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\Pac-ManLeft.svg.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\PacmanLeft.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\PausePlay.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\Preview.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\UndertaleBattle Against a True Hero (Drum & Bass Remix)Mykah.wma
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\UndertaleBattle Against a True Hero (Drum & Bass Remix)Mykah.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\UndertaleUndyne.wma
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\UndertaleUndyne.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.FormSong.resources
