@@ -53,25 +53,25 @@ namespace TestGame01
             if (Keyboard.GetState().IsKeyDown(Keys.Right))
             {
                 pos.X += x;
-                if (pos.X > resolution[0]) pos.X = 0;
+                if (pos.X > resolution[0]-elementSize) pos.X = 0;
             }
             //When press left
             if (Keyboard.GetState().IsKeyDown(Keys.Left))
             {
                 pos.X -= x;
-                if (pos.X < 0) pos.X = resolution[0];
+                if (pos.X < 0) pos.X = resolution[0]-elementSize;
             }
             //When press up
             if (Keyboard.GetState().IsKeyDown(Keys.Up))
             {
                 pos.Y -= y;
-                if (pos.Y < 0) pos.Y = resolution[1];
+                if (pos.Y < 0) pos.Y = resolution[1]-elementSize;
             }
             //When press down
             if (Keyboard.GetState().IsKeyDown(Keys.Down))
             {
                 pos.Y += y;
-                if (pos.Y > resolution[1]) pos.Y = 0;
+                if (pos.Y > resolution[1]-elementSize) pos.Y = 0;
             }
         }
         public void GraviteJump(int x,int y,int gravity = 4)
@@ -100,10 +100,12 @@ namespace TestGame01
         public Vector2 Position
         {
             get { return pos; }
+            set { pos = value; }
         }
         public int[] Resolution
         {
             set { resolution = value; }
         }
+      
     }
 }

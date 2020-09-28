@@ -4,13 +4,19 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Preview.png</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/PausePlay.png</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Next.png</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/UndertaleUndyne.mp3</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/UndertaleBattle Against a True Hero (Drum &amp; Bass Remix)Mykah.mp3</File>
     <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-ManLeft.svg.png</File>
     <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-Man.svg.png</File>
     <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/PacmanHero.png</File>
   </SourceFiles>
   <DestFiles>
-    <File>PacmanLeft.png</File>
     <File xsi:nil="true" />
+    <File>UndertaleUndyne.mp3</File>
+    <File>PacmanLeft.png</File>
     <File>PacmanAvatar.png</File>
   </DestFiles>
 </SourceFileCollection>
