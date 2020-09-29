@@ -97,3 +97,7 @@ C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\
 C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\UndertaleUndyne.wma
 C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\UndertaleUndyne.xnb
 C:\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.FormSong.resources
+D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.FormSong.resources
+D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\SongList.txt
+D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.wma
+D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.xnb

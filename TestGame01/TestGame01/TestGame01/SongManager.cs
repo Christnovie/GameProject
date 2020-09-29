@@ -1,23 +1,46 @@
 ﻿using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using SharpDX.Direct3D11;
 using SharpDX.XAPO.Fx;
+using Microsoft.Xna.Framework.Content;
 
 namespace TestGame01
 {
     public class MusicGame
     {
-        public MusicGame()
+        private string rootRepository;
+        private string songFile= "SongList.txt";
+        public MusicGame(string rootRepository)
         {
-
+            this.rootRepository = rootRepository;
         }
         
-        public List<Song> LoadPlaylist()
+        public List<Song> LoadPlaylist(ContentManager content)
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Song> songsLoaded = new List<Song>();
+                string[] songs = File.ReadAllLines(rootRepository + "\\" + songFile);
+                foreach (string song in songs)
+                {
+                    songsLoaded.Add(content.Load<Song>(song));
+                }
+                return songsLoaded;
+            }
+            catch (FileNotFoundException e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message + "File not found");
+                throw new FileNotFoundException();
+            }
+            
+           
         }
         public void SaveSong(List<Song> songs)
         {
@@ -32,11 +55,11 @@ namespace TestGame01
                 {
                     songName[index] = song.Name;
                 }
-                File.WriteAllLines("C:/GameProject/TestGame01/TestGame01/TestGame01/Content/SongList.txt", songName);
+                File.WriteAllLines(rootRepository+"\\"+songFile, songName);
             }
-            catch(Exception e)
+            catch(FileNotFoundException e)
             {
-                System.Windows.Forms.MessageBox.Show(e.Message);
+                System.Windows.Forms.MessageBox.Show(e.Message+"File not found");
             }
 
         }

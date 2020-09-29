@@ -4,19 +4,21 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/GameProject/TestGame01/TestGame01/TestGame01/Content/Next.png</File>
-    <File>C:/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-Man.svg.png</File>
-    <File>C:/GameProject/TestGame01/TestGame01/TestGame01/Content/PacmanHero.png</File>
-    <File>C:/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-ManLeft.svg.png</File>
-    <File>C:/GameProject/TestGame01/TestGame01/TestGame01/Content/PausePlay.png</File>
-    <File>C:/GameProject/TestGame01/TestGame01/TestGame01/Content/Preview.png</File>
-    <File>C:/GameProject/TestGame01/TestGame01/TestGame01/Content/UndertaleUndyne.mp3</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Next.png</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-Man.svg.png</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/PacmanHero.png</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Pac-ManLeft.svg.png</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/PausePlay.png</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/Preview.png</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.mp3</File>
+    <File>D:/GamerRoom/GameProject/TestGame01/TestGame01/TestGame01/Content/UndertaleUndyne.mp3</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
     <File>PacmanAvatar.png</File>
     <File xsi:nil="true" />
     <File>PacmanLeft.png</File>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -21,7 +21,7 @@ namespace TestGame01
         }
         private void InputJSONData(string[] sons,string file)
         {
-            
+           
         }
         private object GetJSONData(string file)
         {

@@ -30,10 +30,11 @@ namespace TestGame01
         private string moveMode = "Close";
         private string screenMode = "Windows";
         public List<Song> songs = new List<Song>();
-        private MusicGame listSong = new MusicGame();
+        private MusicGame listSong;
         public Video backvideo;
-        public Song  sound;
-        private bool stateSound;
+        public int  sound = 0;
+        
+
         public PacmanTest()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -65,18 +66,25 @@ namespace TestGame01
             next = Content.Load<Texture2D>("Next");//load image texture for avatar an create sprite
             preview = Content.Load<Texture2D>("Preview");//load image texture for avatar an create sprite
             play = Content.Load<Texture2D>("PausePlay");//load image texture for avatar an create sprite
-            sound = Content.Load<Song>("UndertaleUndyne");     //load Music file 
-            MediaPlayer.Play(sound);         //play actualy song in multimedia  
-            MediaPlayer.IsRepeating = true;
+            
+           
 
-            songs.Add(sound);
+            
             move = new Move(hero.Width, resolution, position);
             position = new Vector2(0, 0);//Initialising a vector for prite
-           /** FileStream fileStream = new FileStream("../../../Image/PacmanHero.svg.png",FileMode.Open);
-            hero = Texture2D.FromStream(GraphicsDevice, fileStream);
-            fileStream.Dispose();
-           **/
-          
+            /** FileStream fileStream = new FileStream("../../../Image/PacmanHero.svg.png",FileMode.Open);
+             hero = Texture2D.FromStream(GraphicsDevice, fileStream);
+             fileStream.Dispose();
+            **/
+            //Music Management
+            string path = Path.GetFullPath(Content.RootDirectory);
+            listSong = new MusicGame(path);
+            songs = listSong.LoadPlaylist(Content);
+                 //load Music file 
+            
+            MediaPlayer.Play(songs[sound]);         //play actualy song in multimedia  
+            MediaPlayer.IsRepeating = true;
+
             // TODO: use this.Content to load your game content here
         }
 
@@ -87,8 +95,8 @@ namespace TestGame01
                 Exit();
             //Code for move a sprite avatar
             //When press right
-           
-            
+
+            // TODO: Add your update logic here
             if (Keyboard.GetState().IsKeyDown(Keys.Right) || Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.Down) || Keyboard.GetState().IsKeyDown(Keys.Up)|| Keyboard.GetState().IsKeyDown(Keys.Space))
             {
                 if (Keyboard.GetState().IsKeyDown(Keys.Left)) hero = Content.Load<Texture2D>("PacmanLeft");
@@ -172,16 +180,13 @@ namespace TestGame01
             }
             if (Keyboard.GetState().IsKeyDown(Keys.P))
             {
-                if (stateSound)
+                if (MediaPlayer.State == MediaState.Playing)
                 {
-                    MediaPlayer.Pause();
-                   
-                    stateSound = false;
+                    MediaPlayer.Pause();                   
                 }
-                else
+                if (MediaPlayer.State == MediaState.Paused)
                 {
-                    MediaPlayer.Resume();
-                    stateSound = true;
+                    MediaPlayer.Resume();                   
                 }
                 
             }
@@ -193,10 +198,36 @@ namespace TestGame01
             {
                 listSong.SaveSong(songs);
             }
-            
-                // TODO: Add your update logic here
+           
+            if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Keyboard.GetState().IsKeyDown(Keys.N))
+            {
+                sound++;
+                if (sound > songs.Count - 1 )
+                {
+                    if (MediaPlayer.IsRepeating)
+                    {
+                        sound = 0;
+                        MediaPlayer.Play(songs[sound]);
+                    }
+                    else MediaPlayer.Stop(); 
+                }
+                else MediaPlayer.Play(songs[sound]);
 
-                base.Update(gameTime);
+
+
+                Thread.Sleep(500);
+
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Keyboard.GetState().IsKeyDown(Keys.P))
+            {
+                sound--;
+                if (sound < 0 ) sound = songs.Count - 1;
+                MediaPlayer.Play(songs[sound]);
+                Thread.Sleep(500);
+            }
+
+
+            base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)

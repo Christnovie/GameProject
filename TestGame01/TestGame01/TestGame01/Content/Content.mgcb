@@ -85,6 +85,12 @@
 /processorParam:TextureFormat=Color
 /build:Preview.png
 
+#begin True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.mp3
+
 #begin UndertaleUndyne.mp3
 /importer:Mp3Importer
 /processor:SongProcessor

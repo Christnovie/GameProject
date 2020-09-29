@@ -236,7 +236,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.Desktop;
-            this.ClientSize = new System.Drawing.Size(453, 557);
+            this.ClientSize = new System.Drawing.Size(538, 665);
             this.ControlBox = false;
             this.Controls.Add(this.rdbJump);
             this.Controls.Add(this.cmdWindows);
