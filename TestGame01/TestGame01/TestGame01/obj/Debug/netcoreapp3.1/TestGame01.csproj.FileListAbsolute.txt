@@ -101,3 +101,6 @@ D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.
 D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\SongList.txt
 D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.wma
 D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\SongList.txt
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.wma
+C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.xnb

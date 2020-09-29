@@ -79,9 +79,7 @@ namespace TestGame01
             //Music Management
             string path = Path.GetFullPath(Content.RootDirectory);
             listSong = new MusicGame(path);
-            songs = listSong.LoadPlaylist(Content);
-                 //load Music file 
-            
+            songs = listSong.LoadPlaylist(Content); //load Music file 
             MediaPlayer.Play(songs[sound]);         //play actualy song in multimedia  
             MediaPlayer.IsRepeating = true;
 
