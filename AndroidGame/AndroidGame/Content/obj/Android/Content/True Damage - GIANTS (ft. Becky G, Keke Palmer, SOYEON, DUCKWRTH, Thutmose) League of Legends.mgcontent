@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.mp3</SourceFile>
-  <SourceTime>2020-09-27T04:44:02.9385765+02:00</SourceTime>
-  <DestFile>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.xnb</DestFile>
-  <DestTime>2020-09-30T02:17:29.6726696+02:00</DestTime>
+  <SourceFile>C:/GameProject/AndroidGame/AndroidGame/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.mp3</SourceFile>
+  <SourceTime>2020-09-30T08:26:44.2726667+02:00</SourceTime>
+  <DestFile>C:/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.xnb</DestFile>
+  <DestTime>2020-09-30T09:53:49.5344662+02:00</DestTime>
   <Importer>Mp3Importer</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>SongProcessor</Processor>
@@ -15,6 +15,6 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput>
-    <string>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.m4a</string>
+    <string>C:/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.m4a</string>
   </BuildOutput>
 </PipelineBuildEvent>

@@ -4,9 +4,9 @@
   <Platform>Android</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/PacManLeft.png</File>
-    <File>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.mp3</File>
-    <File>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/UndertaleUndyne.mp3</File>
+    <File>C:/GameProject/AndroidGame/AndroidGame/Content/PacManLeft.png</File>
+    <File>C:/GameProject/AndroidGame/AndroidGame/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.mp3</File>
+    <File>C:/GameProject/AndroidGame/AndroidGame/Content/UndertaleUndyne.mp3</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

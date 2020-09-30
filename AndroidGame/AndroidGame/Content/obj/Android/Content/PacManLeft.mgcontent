@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/PacManLeft.png</SourceFile>
-  <SourceTime>2020-09-24T21:57:06.3120766+02:00</SourceTime>
-  <DestFile>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/PacManLeft.xnb</DestFile>
-  <DestTime>2020-09-30T02:22:36.3505372+02:00</DestTime>
+  <SourceFile>C:/GameProject/AndroidGame/AndroidGame/Content/PacManLeft.png</SourceFile>
+  <SourceTime>2020-09-30T08:26:44.1851947+02:00</SourceTime>
+  <DestFile>C:/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/PacManLeft.xnb</DestFile>
+  <DestTime>2020-09-30T09:53:45.4953302+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

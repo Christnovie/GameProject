@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/UndertaleUndyne.mp3</SourceFile>
-  <SourceTime>2020-09-27T03:06:28.9628937+02:00</SourceTime>
-  <DestFile>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/UndertaleUndyne.xnb</DestFile>
-  <DestTime>2020-09-30T02:17:32.7226464+02:00</DestTime>
+  <SourceFile>C:/GameProject/AndroidGame/AndroidGame/Content/UndertaleUndyne.mp3</SourceFile>
+  <SourceTime>2020-09-30T08:26:44.2846683+02:00</SourceTime>
+  <DestFile>C:/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/UndertaleUndyne.xnb</DestFile>
+  <DestTime>2020-09-30T09:53:53.265523+02:00</DestTime>
   <Importer>Mp3Importer</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>SongProcessor</Processor>
@@ -15,6 +15,6 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput>
-    <string>D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/UndertaleUndyne.m4a</string>
+    <string>C:/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/UndertaleUndyne.m4a</string>
   </BuildOutput>
 </PipelineBuildEvent>
