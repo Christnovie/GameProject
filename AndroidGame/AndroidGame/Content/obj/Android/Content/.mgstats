@@ -1,1 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/PacManLeft.png","D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/PacManLeft.xnb","TextureProcessor","Texture2DContent",5947,40085,0.1180515
+"D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.mp3","D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.xnb","SongProcessor","SongContent",4761110,211,3.225242
+"D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/UndertaleUndyne.mp3","D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Content/UndertaleUndyne.xnb","SongProcessor","SongContent",4899036,133,3.0614996

@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/PacmanHero.png","D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/PacmanHero.xnb","TextureProcessor","Texture2DContent",37066,6067285,0.5965128
+"D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/PacManLeft.png","D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/PacManLeft.xnb","TextureProcessor","Texture2DContent",5947,40085,0.3940015
+"D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/Pac-ManLeft.svg.png","D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/Pac-ManLeft.svg.xnb","TextureProcessor","Texture2DContent",5947,40085,0.0140027
+"D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.mp3","D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.xnb","SongProcessor","SongContent",4761110,211,3.45102
+"D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/UndertaleUndyne.mp3","D:/GamerRoom/GameProject/AndroidGame/AndroidGame/Content/bin/Android/UndertaleUndyne.xnb","SongProcessor","SongContent",4899036,133,3.070003

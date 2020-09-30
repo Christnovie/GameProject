@@ -46,6 +46,18 @@ namespace AndroidGame
 			// aapt resource value: 0x7F010000
 			public const int Icon = 2130771968;
 			
+			// aapt resource value: 0x7F010002
+			public const int PacmanHero = 2130771970;
+			
+			// aapt resource value: 0x7F010001
+			public const int Pac_ManLeft_svg = 2130771969;
+			
+			// aapt resource value: 0x7F010003
+			public const int True_Damage___GIANTS_(ft__Becky_G__Keke_Palmer__SOYEON__DUCKWRTH__Thutmose)_League_of_Legends = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int UndertaleUndyne = 2130771972;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

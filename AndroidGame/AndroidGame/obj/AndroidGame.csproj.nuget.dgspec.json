@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Christnovie.KIALA-BI\\source\\repos\\AndroidGame\\AndroidGame\\AndroidGame.csproj": {}
+    "D:\\GamerRoom\\GameProject\\AndroidGame\\AndroidGame\\AndroidGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Christnovie.KIALA-BI\\source\\repos\\AndroidGame\\AndroidGame\\AndroidGame.csproj": {
+    "D:\\GamerRoom\\GameProject\\AndroidGame\\AndroidGame\\AndroidGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Christnovie.KIALA-BI\\source\\repos\\AndroidGame\\AndroidGame\\AndroidGame.csproj",
+        "projectUniqueName": "D:\\GamerRoom\\GameProject\\AndroidGame\\AndroidGame\\AndroidGame.csproj",
         "projectName": "AndroidGame",
-        "projectPath": "C:\\Users\\Christnovie.KIALA-BI\\source\\repos\\AndroidGame\\AndroidGame\\AndroidGame.csproj",
-        "packagesPath": "C:\\Users\\Christnovie.KIALA-BI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Christnovie.KIALA-BI\\source\\repos\\AndroidGame\\AndroidGame\\obj\\",
+        "projectPath": "D:\\GamerRoom\\GameProject\\AndroidGame\\AndroidGame\\AndroidGame.csproj",
+        "packagesPath": "C:\\Users\\Skarfox\\.nuget\\packages\\",
+        "outputPath": "D:\\GamerRoom\\GameProject\\AndroidGame\\AndroidGame\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Christnovie.KIALA-BI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Skarfox\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

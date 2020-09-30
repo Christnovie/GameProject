@@ -180,11 +180,14 @@ namespace TestGame01
             {
                 if (MediaPlayer.State == MediaState.Playing)
                 {
-                    MediaPlayer.Pause();                   
+                    MediaPlayer.Pause();
+                    Thread.Sleep(300);
                 }
+                else
                 if (MediaPlayer.State == MediaState.Paused)
                 {
-                    MediaPlayer.Resume();                   
+                    MediaPlayer.Resume();
+                    Thread.Sleep(200);
                 }
                 
             }

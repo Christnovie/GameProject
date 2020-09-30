@@ -1,6 +1,9 @@
 AndroidGame.Activity1, AndroidGame;crc649861ed1aa892ab36.Activity1
 AndroidGame.Activity1;crc649861ed1aa892ab36.Activity1
 androidgame.Activity1;crc649861ed1aa892ab36.Activity1
+AndroidGame.Resources.Drawable.View1, AndroidGame;crc64a2cb527d8bef48a9.View1
+AndroidGame.Resources.Drawable.View1;crc64a2cb527d8bef48a9.View1
+androidgame.resources.drawable.View1;crc64a2cb527d8bef48a9.View1
 Microsoft.Devices.Sensors.Accelerometer+SensorListener, MonoGame.Framework;crc64f0e061189adeef62.Accelerometer_SensorListener
 Microsoft.Devices.Sensors.Accelerometer.SensorListener;crc64f0e061189adeef62.Accelerometer_SensorListener
 microsoft.devices.sensors.Accelerometer_SensorListener;crc64f0e061189adeef62.Accelerometer_SensorListener
