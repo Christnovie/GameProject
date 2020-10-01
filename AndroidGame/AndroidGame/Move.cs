@@ -10,20 +10,20 @@ using System.Runtime.CompilerServices;
 
 namespace AndroidGame
 {
-    
+
     public class Move
     {
         private Vector2 pos;
         private int[] resolution;
         private int elementSize;
         TouchCollection Touche = TouchPanel.GetState();
-        public Move(int elementSize,int[] resolution,Vector2 position)
+        public Move(int elementSize, int[] resolution, Vector2 position)
         {
             this.elementSize = elementSize;
             this.resolution = resolution;
             pos = position;
         }
-        public void CloseMove(int x,int y)
+        public void CloseMove(int x, int y)
         {
             //When press right
 
@@ -43,37 +43,37 @@ namespace AndroidGame
             if (Keyboard.GetState().IsKeyDown(Keys.Down))
             {
                 pos.Y += y;
-                if (pos.Y > resolution[1]-elementSize) pos.Y = resolution[1]-elementSize;
+                if (pos.Y > resolution[1] - elementSize) pos.Y = resolution[1] - elementSize;
             }
         }
-        public void InfinityMove(int x,int y)
+        public void InfinityMove(int x, int y)
         {
             //When press right
             if (Keyboard.GetState().IsKeyDown(Keys.Right))
             {
                 pos.X += x;
-                if (pos.X > resolution[0]-elementSize) pos.X = 0;
+                if (pos.X > resolution[0] - elementSize) pos.X = 0;
             }
             //When press left
             if (Keyboard.GetState().IsKeyDown(Keys.Left))
             {
                 pos.X -= x;
-                if (pos.X < 0) pos.X = resolution[0]-elementSize;
+                if (pos.X < 0) pos.X = resolution[0] - elementSize;
             }
             //When press up
             if (Keyboard.GetState().IsKeyDown(Keys.Up))
             {
                 pos.Y -= y;
-                if (pos.Y < 0) pos.Y = resolution[1]-elementSize;
+                if (pos.Y < 0) pos.Y = resolution[1] - elementSize;
             }
             //When press down
             if (Keyboard.GetState().IsKeyDown(Keys.Down))
             {
                 pos.Y += y;
-                if (pos.Y > resolution[1]-elementSize) pos.Y = 0;
+                if (pos.Y > resolution[1] - elementSize) pos.Y = 0;
             }
         }
-        public void GraviteJump(int x,int y,int gravity = 4)
+        public void GraviteJump(int x, int y, int gravity = 4)
         {
             pos.Y += gravity;
             //When press right
@@ -91,12 +91,12 @@ namespace AndroidGame
             if (Keyboard.GetState().IsKeyDown(Keys.Space))
             {
                 pos.Y -= y;
-               
+
             }
 
 
         }
-        public Vector2 GetDesiredVelocityFromInput(float X,float Y)
+        public Vector2 GetDesiredVelocityFromInput(float X, float Y,float speed)
         {
             Vector2 desiredVelocity = new Vector2();
 
@@ -110,7 +110,7 @@ namespace AndroidGame
                 if (desiredVelocity.X != 0 || desiredVelocity.Y != 0)
                 {
                     desiredVelocity.Normalize();
-                    const float desiredSpeed = 200;
+                    float desiredSpeed = speed;
                     desiredVelocity *= desiredSpeed;
                 }
             }
@@ -126,6 +126,8 @@ namespace AndroidGame
         {
             set { resolution = value; }
         }
+
+           
 
       
     }
