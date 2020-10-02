@@ -1,0 +1,13 @@
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.exe
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.deps.json
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.json
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.dev.json
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csprojAssemblyReference.cache
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfoInputs.cache
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfo.cs
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\GameProject\TestGame01\TestGame01\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache

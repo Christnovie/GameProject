@@ -26,7 +26,6 @@ C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\runtimes
 C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
 C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
 C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
-C:\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.csprojAssemblyReference.cache
 C:\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.AssemblyInfoInputs.cache
 C:\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.AssemblyInfo.cs
 C:\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.csproj.CoreCompileInputs.cache
