@@ -4,7 +4,7 @@
   <Platform>Android</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/GameProject/AndroidGame/AndroidApp2/Content/Pac-Man.svg.png</File>
+    <File>D:/GamerRoom/GameProject/AndroidGame/AndroidApp2/Content/Pac-Man.svg.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

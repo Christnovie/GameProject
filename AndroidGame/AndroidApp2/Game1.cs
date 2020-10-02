@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Input;
 using AndroidGame;
 using Android.Text.Method;
 using Microsoft.Xna.Framework.Input.Touch;
+using Android.Graphics.Drawables;
 
 namespace AndroidApp2
 {
@@ -15,11 +16,12 @@ namespace AndroidApp2
         public Texture2D hero;
         public Move move;
         public Vector2 position;
-        public float x = 50;
-        public float y = 50;       
+        public int speed = 1000;
         public  string moveMode = "Close";
+        public Icon icon;
         public Game1()
         {
+            
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
@@ -37,6 +39,7 @@ namespace AndroidApp2
 
         protected override void LoadContent()
         {
+            
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             hero = Content.Load<Texture2D>("Pac-Man.svg");
             move = new Move(hero.Width,resolution,position);
@@ -47,7 +50,7 @@ namespace AndroidApp2
         protected override void Update(GameTime gameTime)
         {
                 
-            Vector2 velocity = move.GetDesiredVelocityFromInput(this.x,this.y);
+            Vector2 velocity = move.GetDesiredVelocityFromInput(position.X,position.Y,speed);
 
             position.X += velocity.X * (float)gameTime.ElapsedGameTime.TotalSeconds;
             position.Y += velocity.Y * (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -72,6 +75,11 @@ namespace AndroidApp2
             _spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+        public int Speed
+        {
+            get { return speed; }
+            set { Speed = value; }
         }
     }
 }

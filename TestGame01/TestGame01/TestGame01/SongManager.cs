@@ -54,8 +54,11 @@ namespace TestGame01
                 foreach (Song song in songs)
                 {
                     songName[index] = song.Name;
+                    index++;
                 }
+                
                 File.WriteAllLines(rootRepository+"\\"+songFile, songName);
+               
             }
             catch(FileNotFoundException e)
             {
