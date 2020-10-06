@@ -97,6 +97,42 @@ namespace TestGame01
 
 
         }
+        public void SnakeMouve(int x,int y)
+        {
+            //When press right
+            if (Keyboard.GetState().IsKeyDown(Keys.Right))
+            {
+                pos.X += x;
+                if (pos.X > resolution[0] - elementSize) pos.X = 0;
+            }
+            else
+            {
+                //When press left
+                if (Keyboard.GetState().IsKeyDown(Keys.Left))
+                {
+                    pos.X -= x;
+                    if (pos.X < 0) pos.X = resolution[0] - elementSize;
+                }
+                else
+                {
+                    //When press up
+                    if (Keyboard.GetState().IsKeyDown(Keys.Up))
+                    {
+                        pos.Y -= y;
+                        if (pos.Y < 0) pos.Y = resolution[1] - elementSize;
+                    }
+                    else
+                    {
+                        //When press down
+                        if (Keyboard.GetState().IsKeyDown(Keys.Down))
+                        {
+                            pos.Y += y;
+                            if (pos.Y > resolution[1] - elementSize) pos.Y = 0;
+                        }
+                    }
+                }
+            }
+        }
         public Vector2 Position
         {
             get { return pos; }

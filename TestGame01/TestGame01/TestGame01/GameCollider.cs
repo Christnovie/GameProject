@@ -7,13 +7,15 @@ namespace TestGame01
 {
     public class GameCollider
     {
-        public void OnCollider(Texture2D sprite1,Texture2D sprite2)
+        
+        public bool OnCollider(Texture2D sprite1,Texture2D sprite2)
         {
-            
+            //for (float sprite1.Width)
+            {
+
+            }
+            return false;
         }
-        public bool Is2DCollider
-        {
-            get {return false; }
-        }
+
     }
 }

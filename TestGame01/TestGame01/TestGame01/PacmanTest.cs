@@ -33,7 +33,9 @@ namespace TestGame01
         private MusicGame listSong;
         public Video backvideo;
         public int  sound = 0;
-        
+        public GameCollider collision = new GameCollider();
+        int countSnakeBouffie = 1;
+
 
         public PacmanTest()
         {
@@ -163,11 +165,29 @@ namespace TestGame01
             if (Keyboard.GetState().IsKeyDown(Keys.Tab))
             {
                 _graphics.IsFullScreen = false;
-                FormSong form = new FormSong();
+                FormSong form = new FormSong(songs);
 
                 if (form.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {  
-                    
+                {
+                    if (form.Song_Selected is null)
+                    {
+
+                    }
+                        else {
+                                if (form.Song_Selected != songs[sound])
+                                {
+                                    MediaPlayer.Play(form.Song_Selected);
+                                    int soundIndex = 0;
+                                    foreach (Song song in songs)
+                                    {
+                                        if (song == form.Song_Selected)
+                                        {
+                                            sound = soundIndex;
+                                        }
+                                        soundIndex++;
+                                    }
+                                }
+                            }
                 }
                 if (screenMode == "Fullscreen")
                 {
@@ -176,7 +196,7 @@ namespace TestGame01
                 }
 
             }
-            if (Keyboard.GetState().IsKeyDown(Keys.P))
+            if (Keyboard.GetState().IsKeyDown(Keys.P)|| collision.OnCollider(hero, play))
             {
                 if (MediaPlayer.State == MediaState.Playing)
                 {
@@ -194,13 +214,12 @@ namespace TestGame01
             if (Keyboard.GetState().IsKeyDown(Keys.L))
             {
                 MediaPlayer.Resume();                
-            }
+            }            
             if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Keyboard.GetState().IsKeyDown(Keys.S))
             {
                 listSong.SaveSong(songs);
-            }
-           
-            if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Keyboard.GetState().IsKeyDown(Keys.N))
+            }           
+            if ((Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Keyboard.GetState().IsKeyDown(Keys.N))||(collision.OnCollider(hero, next)))
             {
                 sound++;
                 if (sound > songs.Count - 1 )
@@ -213,34 +232,38 @@ namespace TestGame01
                     else MediaPlayer.Stop(); 
                 }
                 else MediaPlayer.Play(songs[sound]);
-
-
-
                 Thread.Sleep(500);
-
             }
-            if (Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Keyboard.GetState().IsKeyDown(Keys.P))
+            if ((Keyboard.GetState().IsKeyDown(Keys.LeftControl) && Keyboard.GetState().IsKeyDown(Keys.P))||(collision.OnCollider(hero, preview)))
             {
                 sound--;
                 if (sound < 0 ) sound = songs.Count - 1;
                 MediaPlayer.Play(songs[sound]);
                 Thread.Sleep(500);
             }
-
-
+            if (Keyboard.GetState().IsKeyDown(Keys.T))
+            {
+                countSnakeBouffie++;
+                Thread.Sleep(300);
+            }
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.White);
 
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
-            _spriteBatch.Draw(next,new Rectangle(WindowsResolution.X / 4 * 3 -125, WindowsResolution.Y/2 - 125,250,250),Color.Red);
-            _spriteBatch.Draw(preview,new Rectangle(WindowsResolution.X / 4 -125, WindowsResolution.Y / 2 -125, 250, 250), Color.Red);
+            _spriteBatch.Draw(next,new Rectangle(WindowsResolution.X / 4 * 3 -125, WindowsResolution.Y/2 - 125,250,250),Color.White);
+            _spriteBatch.Draw(preview,new Rectangle(WindowsResolution.X / 4 -125, WindowsResolution.Y / 2 -125, 250, 250), Color.White);
             _spriteBatch.Draw(play, new Rectangle(WindowsResolution.X / 2 -150, WindowsResolution.Y / 2 -150, 300, 300), Color.Black);
-            _spriteBatch.Draw(hero,position,Color.Yellow);
+            int pos = 0;
+            for(int i = 0; i < countSnakeBouffie; i++)
+            {
+                _spriteBatch.Draw(hero, position + new Vector2(pos,0), Color.Yellow);
+                pos -= hero.Width;
+            }          
             _spriteBatch.End();
 
             base.Draw(gameTime);

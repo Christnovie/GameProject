@@ -103,3 +103,4 @@ D:\GamerRoom\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.
 C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\SongList.txt
 C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.wma
 C:\GameProject\TestGame01\TestGame01\TestGame01\bin\Debug\netcoreapp3.1\Content\True Damage - GIANTS (ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) League of Legends.xnb
+C:\GameProject\TestGame01\TestGame01\TestGame01\obj\Debug\netcoreapp3.1\TestGame01.csprojAssemblyReference.cache
