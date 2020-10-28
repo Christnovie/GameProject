@@ -71,7 +71,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(253, 324);
+            this.ClientSize = new System.Drawing.Size(249, 320);
             this.ControlBox = false;
             this.Controls.Add(this.lsb_Song);
             this.Controls.Add(this.cmdFinish);
