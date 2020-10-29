@@ -3,3 +3,4 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "C:/GameProject/GamePads/GamePads/Content/backimage2.jpg","C:/GameProject/GamePads/GamePads/Content/bin/Windows/Content/backimage2.xnb","TextureProcessor","Texture2DContent",29453,921685,0.2485923
 "C:/GameProject/GamePads/GamePads/Content/backimagehd.jpg","C:/GameProject/GamePads/GamePads/Content/bin/Windows/Content/backimagehd.xnb","TextureProcessor","Texture2DContent",148537,2834005,0.2386275
 "C:/GameProject/GamePads/GamePads/Content/beats.jpg","C:/GameProject/GamePads/GamePads/Content/bin/Windows/Content/beats.xnb","TextureProcessor","Texture2DContent",6398,524373,0.190477
+"C:/GameProject/GamePads/GamePads/Content/UndertaleUndyne.mp3","C:/GameProject/GamePads/GamePads/Content/bin/Windows/Content/UndertaleUndyne.xnb","SongProcessor","SongContent",4899036,133,2.32772

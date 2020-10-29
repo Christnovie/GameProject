@@ -8,8 +8,10 @@
     <File>C:/GameProject/GamePads/GamePads/Content/backimage2.jpg</File>
     <File>C:/GameProject/GamePads/GamePads/Content/backimagehd.jpg</File>
     <File>C:/GameProject/GamePads/GamePads/Content/beats.jpg</File>
+    <File>C:/GameProject/GamePads/GamePads/Content/UndertaleUndyne.mp3</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

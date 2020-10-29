@@ -39,3 +39,5 @@ C:\GameProject\GamePads\GamePads\bin\Debug\netcoreapp3.1\Content\backimage.xnb
 C:\GameProject\GamePads\GamePads\bin\Debug\netcoreapp3.1\Content\backimage2.xnb
 C:\GameProject\GamePads\GamePads\bin\Debug\netcoreapp3.1\Content\backimagehd.xnb
 C:\GameProject\GamePads\GamePads\bin\Debug\netcoreapp3.1\Content\beats.xnb
+C:\GameProject\GamePads\GamePads\bin\Debug\netcoreapp3.1\Content\UndertaleUndyne.wma
+C:\GameProject\GamePads\GamePads\bin\Debug\netcoreapp3.1\Content\UndertaleUndyne.xnb
