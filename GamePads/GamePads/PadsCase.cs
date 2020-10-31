@@ -51,12 +51,14 @@ namespace GamePads
         public void Play()
         {
             if (Collider2D.Is_Clicked_Mouse(vector,Size))
-            {
+            {                
+                 Process.Start("C:/Program Files/Mozilla Firefox/firefox.exe", "https://skarfoxgaming.com/");
+
                 if (State)
                 {
                     string sounder = Path.GetFullPath(game.Content.RootDirectory) + "/UndertaleUndyne.wma";
-                    soundPlayer = new SoundPlayer(Path.GetFullPath( game.Content.RootDirectory)+"/UndertaleUndyne.wma");
-                    soundPlayer.Play();
+                    
+                    MediaPlayer.Play(sound);
                     
                 }
                 else

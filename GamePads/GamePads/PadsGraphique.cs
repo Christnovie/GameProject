@@ -34,6 +34,7 @@ namespace GamePads
             _graphics.PreferredBackBufferWidth = _graphics.PreferredBackBufferWidth + _graphics.PreferredBackBufferWidth / 2;
             _graphics.PreferredBackBufferHeight = _graphics.PreferredBackBufferHeight + _graphics.PreferredBackBufferHeight / 2;
             _graphics.ApplyChanges();
+            
         }
 
         protected override void LoadContent()
@@ -64,10 +65,12 @@ namespace GamePads
                     padsCase.Play();
                 }
             }
+            if ( Mouse.GetState().X == (int)WindowsSize[0] && Mouse.GetState().LeftButton == ButtonState.Pressed)
+                
 
-                    // TODO: Add your update logic here
+                // TODO: Add your update logic here
 
-                    base.Update(gameTime);
+                base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
