@@ -16,6 +16,9 @@ namespace GamePads
         private SpriteBatch _spriteBatch;
         public Texture2D background;
         private PadsCase beats;
+        private List<PadsCase> padsCases = new List<PadsCase>();
+       
+        
         public PadsGraphique()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -37,7 +40,14 @@ namespace GamePads
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             background = Content.Load<Texture2D>("backimagehd");
-            beats = new PadsCase(Content.Load<Texture2D>("Beats"), this, Content.Load<Song>("UndertaleUndyne"));
+            int place = 0;
+            for (int i = 1; i < 4; i++)
+            {
+                beats = new PadsCase(Content.Load<Texture2D>("Beats"), this, Content.Load<Song>("UndertaleUndyne"),new Vector2(place,place*i));
+                beats.Size = new Rectangle((int)beats.Position.X,(int)beats.Position.Y,100,120);
+                padsCases.Add(beats);
+                place += beats.Size.Y + 10;
+            }
             
 
             // TODO: use this.Content to load your game content here
@@ -47,10 +57,17 @@ namespace GamePads
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-            beats.Play();
-            // TODO: Add your update logic here
+            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+            {
+                foreach (PadsCase padsCase in padsCases)
+                {
+                    padsCase.Play();
+                }
+            }
 
-            base.Update(gameTime);
+                    // TODO: Add your update logic here
+
+                    base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
@@ -58,18 +75,19 @@ namespace GamePads
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _spriteBatch.Begin();
             _spriteBatch.Draw(background,new Rectangle(0,0,_graphics.PreferredBackBufferWidth,_graphics.PreferredBackBufferHeight),Color.White);
-            _spriteBatch.Draw(beats.padcase, beats.Position, Color.Gold);
+            foreach(PadsCase padsCase in padsCases)
+            _spriteBatch.Draw(padsCase.padcase,padsCase.Size, Color.Gold);
             _spriteBatch.End();
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
         }
-        public int[] WindowsSize
+        public float[] WindowsSize
         {
             get
             {
 
-                return new int[2] {_graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight };
+                return new float[2] {_graphics.PreferredBackBufferWidth - 0.001f, _graphics.PreferredBackBufferHeight - 0.001f};
             }
         }
     }

@@ -5,8 +5,11 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.DirectoryServices.ActiveDirectory;
 using System.IO;
+using System.Media;
+using System.Security.Cryptography.Xml;
 using System.Threading;
 
 
@@ -17,43 +20,63 @@ namespace GamePads
         public Texture2D padcase;
         private PadsGraphique game;
         private Vector2 vector;
-        private Song sound;        
+        private Song sound;
+        private string place;
+        private Rectangle size;
+        private float ration;
+        private SoundPlayer soundPlayer; 
+        
+        
         public PadsCase(Texture2D padcase, object game, Song sound,Vector2 vector = new Vector2())
         {
             this.vector = vector;
             this.game = (PadsGraphique)game;            
             this.padcase = padcase;
-            this.sound = sound;    
-            
+            this.sound = sound;
+            ration = this.padcase.Width / this.game.WindowsSize[0] + 0.001f;
+            size = new Rectangle((int)vector.X, (int)vector.Y, (int)(this.game.WindowsSize[0] * ration), (int)(this.game.WindowsSize[1] * ration));
+            ration = size.Width / this.game.WindowsSize[0] + 0.001f;
         }
-        public bool Is_clicked()
+        public PadsCase(Texture2D padcase, object game, Song sound, string vector)
         {
-            bool state = false;
-            for (int ver = (int)vector.X; ver < padcase.Width; ver++) {
-                for (int hor = (int)vector.X; hor < padcase.Width; hor++)
-                {
-                    if (Mouse.GetState().LeftButton == ButtonState.Pressed && new Vector2(Mouse.GetState().X, Mouse.GetState().Y) == new Vector2(hor, ver))
-                    {
-                        state = true;
-                        return true;                        
-                    }
-                }
-            }         
-            return false;              
+            
+            this.game = (PadsGraphique)game;
+            this.padcase = padcase;
+            this.sound = sound;
+            place = vector;
+            this.vector = new Vector2(this.game.WindowsSize[0], this.game.WindowsSize[1]);
+            ration = this.padcase.Width / this.game.WindowsSize[0] + 0.001f;
         }
+
         public void Play()
         {
-            if (Is_clicked())
+            if (Collider2D.Is_Clicked_Mouse(vector,Size))
             {
                 if (State)
                 {
-                    MediaPlayer.Play(sound);
+                    string sounder = Path.GetFullPath(game.Content.RootDirectory) + "/UndertaleUndyne.wma";
+                    soundPlayer = new SoundPlayer(Path.GetFullPath( game.Content.RootDirectory)+"/UndertaleUndyne.wma");
+                    soundPlayer.Play();
+                    
                 }
                 else
                 {
                     MediaPlayer.Stop();
                     MediaPlayer.Play(sound);
                 }
+            }
+        }
+        public Rectangle Size
+        {
+            get
+            {
+                size = new Rectangle((int)vector.X,(int)vector.Y,(int)(game.WindowsSize[0]*ration),(int)(game.WindowsSize[1] * ration));                
+                return size;
+            }
+            set
+            {
+                size = value;
+                ration = size.Width / game.WindowsSize[0] + 0.001f;
             }
         }
         public bool State
@@ -66,6 +89,7 @@ namespace GamePads
                 else return false;
             }       
         }
+      
         public Vector2 Position
         {
             get { return vector; }
