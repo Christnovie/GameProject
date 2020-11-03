@@ -3,12 +3,14 @@ using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using SharpDX.MediaFoundation;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.DirectoryServices.ActiveDirectory;
 using System.IO;
 using System.Media;
+using System.Net.NetworkInformation;
 using System.Security.Cryptography.Xml;
 using System.Threading;
 
@@ -51,15 +53,29 @@ namespace GamePads
         public void Play()
         {
             if (Collider2D.Is_Clicked_Mouse(vector,Size))
-            {                
-                 Process.Start("C:/Program Files/Mozilla Firefox/firefox.exe", "https://skarfoxgaming.com/");
+            {              
+                byte[] ipaddress ;
+                ipaddress = new byte[4];
+                ipaddress[0] = 8;
+                ipaddress[1] = 8;
+                ipaddress[2] = 8;
+                ipaddress[3] = 8;
+                PingReply ping = new Ping().Send(new System.Net.IPAddress(ipaddress));
+                if (ping.Status == IPStatus.Success)
+                {
+                    Console.WriteLine("Connexion internet detecté");                    
+                    Process.Start("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe", "https://skarfoxgaming.com/");
+                    Thread.Sleep(200);
+                }
+                else
+                    Console.WriteLine("Aucune connexion internet detecté");
+
+
 
                 if (State)
                 {
-                    string sounder = Path.GetFullPath(game.Content.RootDirectory) + "/UndertaleUndyne.wma";
-                    
-                    MediaPlayer.Play(sound);
-                    
+                    string sounder = Path.GetFullPath(game.Content.RootDirectory) + "/UndertaleUndyne.wma";                    
+                    MediaPlayer.Play(sound);                    
                 }
                 else
                 {
