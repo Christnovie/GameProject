@@ -63,25 +63,26 @@ namespace GamePads
                 PingReply ping = new Ping().Send(new System.Net.IPAddress(ipaddress));
                 if (ping.Status == IPStatus.Success)
                 {
-                    Console.WriteLine("Connexion internet detecté");                    
+                    System.Windows.Forms.MessageBox.Show("Connexion internet detecté");
                     Process.Start("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe", "https://skarfoxgaming.com/");
                     Thread.Sleep(200);
+                    if (State)
+                    {
+                        string sounder = Path.GetFullPath(game.Content.RootDirectory) + "/UndertaleUndyne.wma";
+                        MediaPlayer.Play(sound);
+                    }
+                    else
+                    {
+                        MediaPlayer.Stop();
+                        MediaPlayer.Play(sound);
+                    }
                 }
-                else
-                    Console.WriteLine("Aucune connexion internet detecté");
+                else                    
+                    System.Windows.Forms.MessageBox.Show("Aucune connexion internet detecté");
 
 
 
-                if (State)
-                {
-                    string sounder = Path.GetFullPath(game.Content.RootDirectory) + "/UndertaleUndyne.wma";                    
-                    MediaPlayer.Play(sound);                    
-                }
-                else
-                {
-                    MediaPlayer.Stop();
-                    MediaPlayer.Play(sound);
-                }
+
             }
         }
         public Rectangle Size
