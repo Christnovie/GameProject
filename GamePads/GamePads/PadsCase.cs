@@ -77,8 +77,12 @@ namespace GamePads
                         MediaPlayer.Play(sound);
                     }
                 }
-                else                    
+                else
+                {
                     System.Windows.Forms.MessageBox.Show("Aucune connexion internet detecté");
+                    Thread.Sleep(200);
+                }                    
+                   
 
 
 
