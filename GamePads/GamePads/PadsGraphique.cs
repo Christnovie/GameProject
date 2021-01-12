@@ -19,7 +19,7 @@ namespace GamePads
         private Texture2D background;
         private PadsCase beats;
         private List<PadsCase> padsCases = new List<PadsCase>();
-        private PadsCannevas gamePadsCanv;
+        public PadsCannevas gamePadsCanv;
 
 
         public PadsGraphique()
@@ -45,6 +45,7 @@ namespace GamePads
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             background = Content.Load<Texture2D>("backimagehd");
             int place = 0;
+            gamePadsCanv = new PadsCannevas(padsCases, this);
             for (int i = 1; i < 4; i++)
             {
                 beats = new PadsCase(Content.Load<Texture2D>("Beats"), this, Content.Load<Song>("UndertaleUndyne"), new Vector2(place, place * i));
@@ -52,7 +53,7 @@ namespace GamePads
                 padsCases.Add(beats);
                 place += beats.Size.Y + 10;
             }
-            gamePadsCanv = new PadsCannevas(padsCases, this);
+           
 
 
             // TODO: use this.Content to load your game content here

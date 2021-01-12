@@ -35,9 +35,9 @@ namespace GamePads
             this.game = (PadsGraphique)game;            
             this.padcase = padcase;
             this.sound = sound;
-            ration = this.padcase.Width / this.game.WindowsSize[0] + 0.001f;
-            size = new Rectangle((int)vector.X, (int)vector.Y, (int)(this.game.WindowsSize[0] * ration), (int)(this.game.WindowsSize[1] * ration));
-            ration = size.Width / this.game.WindowsSize[0] + 0.001f;
+            ration = this.padcase.Width / this.game.gamePadsCanv.CanvasSize[0] + 0.001f;
+            size = new Rectangle((int)vector.X, (int)vector.Y, (int)(this.game.gamePadsCanv.CanvasSize[0] * ration), (int)(this.game.gamePadsCanv.CanvasSize[1] * ration));
+            ration = size.Width / this.game.gamePadsCanv.CanvasSize[0] + 0.001f;
         }
         public PadsCase(Texture2D padcase, object game, Song sound, string vector)
         {
@@ -46,7 +46,7 @@ namespace GamePads
             this.padcase = padcase;
             this.sound = sound;
             place = vector;
-            this.vector = new Vector2(this.game.WindowsSize[0], this.game.WindowsSize[1]);
+            this.vector = new Vector2(this.game.gamePadsCanv.CanvasSize[0], this.game.gamePadsCanv.CanvasSize[1]);
             ration = this.padcase.Width / this.game.WindowsSize[0] + 0.001f;
         }
 
@@ -93,13 +93,13 @@ namespace GamePads
         {
             get
             {
-                size = new Rectangle((int)vector.X,(int)vector.Y,(int)(game.WindowsSize[0]*ration),(int)(game.WindowsSize[1] * ration));                
+                size = new Rectangle((int)vector.X,(int)vector.Y,(int)(game.gamePadsCanv.CanvasSize[0]*ration),(int)(game.gamePadsCanv.CanvasSize[1] * ration));                
                 return size;
             }
             set
             {
                 size = value;
-                ration = size.Width / game.WindowsSize[0] + 0.001f;
+                ration = size.Width / game.gamePadsCanv.CanvasSize[0] + 0.001f;
             }
         }
         public bool State
